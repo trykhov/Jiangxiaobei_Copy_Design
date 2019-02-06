@@ -1,8 +1,5 @@
 body {
   background-color: #dfe2e2;
-  height: 100%;
-  width: 100%;
-  position: absolute;
 }
 
 
@@ -11,12 +8,12 @@ body {
 
 .user_block {
   background-color: white;
-  /* 15px gives a rectangle the curve shape on all four sides */
-  border-radius: 15px;
+  border-radius: 15px; /* 15px gives a rectangle the curve shape on all four sides */
   width: 50%;
   height: 20%;
-  margin: 5% 10%;
-  position: relative;
+  position: absolute;
+  top: 10%;
+  left: 5%;
 }
 
 /* For iphone sizes, it should take up the whole screen */
@@ -24,20 +21,24 @@ body {
   .user_block {
     width: 100%;
     height: 20%;
-    margin: 0;
+    top: 0;
+    left: 0;
   }
+}
 
-  .
+
+.user_pic {
+  height: 100%;
+  width: auto;
+  float: left;
 }
 
 .user_info {
-  position: absolute;
   height: 100%;
-  width: 75%;
-  line-height: 2rem;
-  vertical-align: middle;
-  margin: 1%;
-  margin-left: 3%;
+  width: 70%;
+  position: absolute;
+  left: 3%;
+  top: 10%;
 }
 
 .try_headshot {
@@ -45,15 +46,13 @@ body {
   height: 80%;
   width: auto; /* maintains the circle while the height varies */
   float: left;
-  vertical-align: middle;
-  margin-right: 5%;
+  margin-right: 15px;
 }
 
 .username {
-  font-size: 20px;
   color: #5d5d5a;
-  margin: 0;
-  display: inline-block;
+  font-size: 30px;
+  padding-top: 3%;
 }
 
 .user_desc {
@@ -72,8 +71,9 @@ body {
   padding: 5px 40px 5px 40px;
   text-decoration: none;
   position: absolute;
-  right: 30px;
-  margin-top: 30px;
+  top: 30%;
+  right: 10%;
+  /* margin-top: 30px; */
 }
 
 .butn:hover {
@@ -89,8 +89,8 @@ body {
 /* PORTFOLIO SECTION */
 
 .mid_container {
-  position: relative;
-  height: 550px;
+  position: absolute;
+  top: 40%;
   width: 100%;
 }
 
