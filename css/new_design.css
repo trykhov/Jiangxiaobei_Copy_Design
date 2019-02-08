@@ -6,8 +6,8 @@ body {
   border-radius: 15px;
   background-color: white;
   padding: 10px;
-  margin: 1rem;
   width: 300px;
+  margin: 1em auto;
 }
 
 .number {
@@ -28,23 +28,79 @@ body {
   margin: 0 5%;
 }
 
+.top_container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------*/
 
 .image {
   border-radius: 15px;
-  margin-bottom: 3%;
 }
 
+/* the first image that's the largest */
+.head_image {
+  width: 100%;
+  height: 150px;
+  grid-area: first;
+}
+
+.second_image {
+  width: 100%;
+  grid-area: second;
+}
+
+.third_image {
+  width: 100%;
+  grid-area: third;
+}
+
+.fourth_image {
+  width: 100%;
+  grid-area: fourth;
+}
+
+.fifth_image {
+  width: 100%;
+  grid-area: fifth;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "first first"
+    "second third"
+    "fourth fifth";
+    grid-gap: 1em;
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------------*/
 
 @media (min-width:900px) {
   .container {
     display: flex; /* this allows the boxes to have a row each in mobile */
   }
+
+  .box {
+    margin: 1em;
+  }
 }
 .container {
   /* not having display: flex; here allows the boxes to take a row each */
   align-items: flex-start; /* allows the flex boxes to have height respective to their own boxes */
+  justify-content: center;
 }
+
+
 /* ----------------------------------- Design box ---------------------------------------------- */
 
 .design_bottom {
@@ -76,20 +132,10 @@ body {
 }
 
 
-/* ---------------------------------- Interactive Box -------------------------------------------- */
+/* ---------------------------------- Web Box -------------------------------------------- */
 
-.interactive_bottom {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
 
-.ux_image {
-  width: 100%;
-  height: 100px;
-}
 
-.ui_image {
-  width: 50%;
-  height: 50%;
-}
+
+
+/* ---------------------------------- C4D Box -------------------------------------------- */
