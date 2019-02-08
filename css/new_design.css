@@ -2,71 +2,94 @@ body {
   background-color: #dfe2e2;
 }
 
-#skills .box {
-  /* background-color: white; */
-  border-radius: 15px; /* 15px gives a rectangle the curve shape on all four sides */
-}
-
-.user {
+.box {
+  border-radius: 15px;
   background-color: white;
-  border-radius: 15px;
-  margin: 20px;
+  padding: 10px;
+  margin: 1rem;
+  width: 300px;
 }
 
-/* on webpage, keep it static */
-#user_header .box{
-  height: 100px;
-  width: 500px;
-}
-
-/* -------------------------------------------------------------------------- */
-@media (max-width: 500px) {
-  /* if it shrinks to mobile, then it should be flexible */
-  .box {
-    width: 100%;
-  }
-
-  #user_header .box {
-    height: 100px;
-    width: 100%;
-  }
-
-
-}
-
-/* -------------------------------------------------------------------------- */
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-columns:repeat(3, 1fr); */
-  grid-gap: 1em;
-}
-
-.skills_container {
-  padding: 0;
-  border-radius: 15px;
-}
-
-.design {
-  background-color: red;
-}
-
-.interactive {
+.number {
   background-color: blue;
-  grid-column: 2;
-  grid-row: 1/3;
-  height: 500px;
+  border-radius: 15px;
+  display: inline;
+  color: white;
+  padding: 5px 15px;
+}
+/* ---------------------------- the top of each box  -----------------------------*/
+.top {
+  display: flex;
+  align-items: center;
+  margin: 0 5%;
 }
 
-.web {
-  background-color: green;
+.title {
+  margin: 0 5%;
 }
 
-.font {
-  background-color: purple;
+/* ------------------------------------------------------------------------------*/
+
+.image {
+  border-radius: 15px;
+  margin-bottom: 3%;
 }
 
-.c4d {
-  background-color: gold;
+
+@media (min-width:900px) {
+  .container {
+    display: flex; /* this allows the boxes to have a row each in mobile */
+  }
+}
+.container {
+  /* not having display: flex; here allows the boxes to take a row each */
+  align-items: flex-start; /* allows the flex boxes to have height respective to their own boxes */
+}
+/* ----------------------------------- Design box ---------------------------------------------- */
+
+.design_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 13%;
+  width: 100%;
+}
+
+.orange_ball {
+  background-color: orange;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  float: left;
+}
+
+.design_title {
+  margin: 0 5%; /* with aligh-items: center, removing the top and bottom margins centers*/
+}
+
+.design_skills {
+  background-color: gray;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px; /* shape of the skill bars */
+  margin: 2% 5% 2% 0;
+}
+
+
+/* ---------------------------------- Interactive Box -------------------------------------------- */
+
+.interactive_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ux_image {
+  width: 100%;
+  height: 100px;
+}
+
+.ui_image {
+  width: 50%;
+  height: 50%;
 }

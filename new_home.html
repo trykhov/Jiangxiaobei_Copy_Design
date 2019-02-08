@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
     <meta charset="utf-8">
-    <title>Design Replica</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>CSS Grid Tutorial</title>
     <link rel="stylesheet" href="css/new_design.css">
   </head>
 
   <body>
-
-    <section id="user_header">
-      <div class="user box">
-
+    <div class="user box">
+      <p>hi</p>
+      <!-- <img class="user_pic" src="images/try_pic.jpg" alt="picture_of_try">
+      <div class="user_info">
+        <h1 class="user_name">Try Khov</h1>
+        <p class="user_desc">Web Developer</p> -->
+    </div>
+    <div class="container">
+      <div class="first_col">
+        <!-- this column will have design & interactive -->
+        <div class="design box">
+          <div class="top"> <!-- top will be the format for the header -->
+            <div class="orange_ball">
+              <!-- just for the orange ball -->
+            </div>
+            <h1 class="title">Design Work</h1>
+          </div>
+          <div class="design_bottom">
+            <p class="design_skills">Interactive</p>
+            <p class="design_skills">Web</p>
+            <p class="design_skills">Font</p>
+            <p class="design_skills">C4D</p>
+          </div>
+        </div>
+        <div class="interactive box">
+          <div class="top">
+            <p class="number">12</p>
+            <h1 class="title">Interactive</h1>
+          </div>
+          <div class="interactive_bottom">
+            <img class="image ux_image" src="images/ux_image_2.png" alt="ux_image">
+            <img class="image ui_image" src="images/ux_ui_image.png" alt="ui_image">
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section id="skills">
-      <div class="wrapper">
-          <div class="design box">
-            <p>hello</p>
+      <div class="second_col">
+        <!-- this will only have web -->
+        <div class="web box">
+          <div class="top">
+            <p class="number">5</p>
+            <h1 class="title">Web</h1>
           </div>
-          <div class="interactive box">
-
-          </div>
-          <div class="web box">
-
-          </div>
-          <div class="font box">
-            <p>world</p>
-          </div>
-          <div class="c4d box">
-
-          </div>
+        </div>
       </div>
-    </section>
+      <div class="third_col">
+        <div class="font box">
+          <div class="top">
+            <p class="number">8</p>
+            <h1 class="title">Font</h1>
+          </div>
+        </div>
+        <div class="c4d box">
+          <div class="top">
+            <p class="number">3</p>
+            <h1 class="title">C4D</h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
-
 </html>
