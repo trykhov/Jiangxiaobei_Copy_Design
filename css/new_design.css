@@ -11,11 +11,16 @@ body {
 }
 
 .number {
-  background-color: blue;
+  background-color: #0f80fa;
   border-radius: 15px;
   display: inline;
   color: white;
   padding: 5px 15px;
+}
+
+.title {
+  color: #5d5d5a;
+  font-family: sans-serif;
 }
 /* ---------------------------- the top of each box  -----------------------------*/
 .top {
@@ -81,19 +86,7 @@ body {
 
 /* ------------------------------------------------------------------------------*/
 
-@media (min-width:900px) {
-  .container {
-    display: flex; /* this allows the boxes to have a row each in mobile */
-  }
 
-  .box {
-    margin: 1em;
-  }
-
-  .user {
-    width: 650px; /* start of the first column to the end of the second */
-  }
-}
 .container {
   /* not having display: flex; here allows the boxes to take a row each */
   align-items: flex-start; /* allows the flex boxes to have height respective to their own boxes */
@@ -106,11 +99,57 @@ body {
   grid-template-rows: 1fr;
   width: 80%;
   margin: 0 auto;
+}
 
+.check_word {
+  color: blue;
+}
+
+/* ----------------------------------- user box ------------------------------------------------ */
+
+.user_pic {
+  border-radius: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.user_info {
+  line-height: 1.5em;
+  font-family: sans-serif;
+}
+
+.user_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+
+.butn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #0f80fa;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.butn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 /* ----------------------------------- Design box ---------------------------------------------- */
-
 
 
 .design_bottom {
@@ -133,10 +172,45 @@ body {
 }
 
 .design_skills {
-  background-color: gray;
+  background-color: #bbbbbb;
   border-radius: 15px;
   color: white;
   font-size: 20px;
   padding: 5px 20px; /* shape of the skill bars */
   margin: 2% 5% 2% 0;
+}
+
+@media (min-width:900px) {
+  .container {
+    display: flex; /* this allows the boxes to have a row each in mobile */
+  }
+
+  .box {
+    margin: 1em;
+  }
+
+  .user {
+    width: 650px; /* start of the first column to the end of the second */
+    color: #5d5d5a;
+  }
+
+  .user_desc {
+    color: #bbbbbb;
+  }
+
+  .user_grid {
+    display: flex;
+    align-items: center;
+    grid-gap: 0.5em;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  .user_pic {
+    margin: 0 3%;
+  }
+
+  .butn {
+    margin: 0 auto 0 30%;
+  }
 }
