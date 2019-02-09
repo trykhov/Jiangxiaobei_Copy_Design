@@ -34,10 +34,6 @@ body {
 }
 
 
-
-
-
-
 /* ------------------------------------------------------------------------------*/
 
 .image {
@@ -79,7 +75,7 @@ body {
     "first first"
     "second third"
     "fourth fifth";
-    grid-gap: 1em;
+  grid-gap: 1em;
   width: 100%;
 }
 
@@ -93,6 +89,10 @@ body {
   .box {
     margin: 1em;
   }
+
+  .user {
+    width: 650px; /* start of the first column to the end of the second */
+  }
 }
 .container {
   /* not having display: flex; here allows the boxes to take a row each */
@@ -100,8 +100,18 @@ body {
   justify-content: center;
 }
 
+.grid_system {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 80%;
+  margin: 0 auto;
+
+}
 
 /* ----------------------------------- Design box ---------------------------------------------- */
+
+
 
 .design_bottom {
   display: flex;
@@ -130,12 +140,3 @@ body {
   padding: 5px 20px; /* shape of the skill bars */
   margin: 2% 5% 2% 0;
 }
-
-
-/* ---------------------------------- Web Box -------------------------------------------- */
-
-
-
-
-
-/* ---------------------------------- C4D Box -------------------------------------------- */
