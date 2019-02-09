@@ -48,14 +48,28 @@ body {
 .more {
   background-color: #bbbbbb;
   border-radius: 15px;
-  text-align: center;
+  /* text-align: center; */
   color: white;
-  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  vertical-align: middle;
 }
 
 .dotdotdot {
   margin: 0 auto;
+  font-size: 40px;
+  letter-spacing: 3px;
 }
+
+.dot_1 {
+  padding: 5px;
+}
+
+.dot_2 {
+  padding: 15px;
+}
+
 /* the first image that's the largest */
 .head_image {
   width: 100%;
