@@ -14,4 +14,9 @@ and line up to places that I needed it to be.
 
 But I'm happy with my results and will perhaps come back in the future to clean it up once I learn a few more tricks.
 
+Original:
+![jiangxiaobei_img](images/jiangxiaobei_design.png)
+
+
+My rendition:
 ![](jiangxiaobei_replica.gif)
