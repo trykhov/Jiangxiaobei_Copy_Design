@@ -1,6 +1,9 @@
 # Jiangxiaobei Design
 
 ## Purpose
+
+******** Main code source is new_home.html and new_design.css **********
+
 This is a design that I found on Dribble.com, a site for designers.
 In practicing my web development skills, I decided to recreate a similar design. This project taught me a lot about responsiveness.
 
